@@ -1,6 +1,7 @@
 name: Swati Gupta
+title: Swati Gupta's Website
 theme: jekyll-theme-cayman
-permalink: /:year/:month/:day/:title/
+permalink: /blog/:year/:month/:day/:title/
 markdown: kramdown
 plugins:
   - jekyll-paginate
