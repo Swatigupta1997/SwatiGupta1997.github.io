@@ -1,3 +1,7 @@
+---
+permalink: /blog_home.html
+---
+
 # Swati Gupta
 I love to tinker with challenging problems that have real world applications. 
 
