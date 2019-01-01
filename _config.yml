@@ -1,7 +1,7 @@
 name: Swati Gupta
 title: Swati Gupta's Website
 theme: jekyll-theme-cayman
-avatar: 
+avatar: https://raw.githubusercontent.com/Swatigupta1997/SwatiGupta1997.github.io/images/mypic.png
 repository: https://github.com/Swatigupta1997/
 permalink: /blog/:year/:month/:day/:title/
 footer-links:
@@ -11,5 +11,12 @@ footer-links:
   rss: RSS Feed
 markdown: kramdown
 plugins:
+  - jekyll-avatar
+  - jekyll-feed
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
   - jekyll-paginate
   - jekyll-sitemap
