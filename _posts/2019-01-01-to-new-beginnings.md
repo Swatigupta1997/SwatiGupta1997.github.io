@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: To New Beginnings
 date: 2019-01-01
 ---
