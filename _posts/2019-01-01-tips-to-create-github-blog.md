@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Creating your own blog series
 date: 2019-01-01
 ---
