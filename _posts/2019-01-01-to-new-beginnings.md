@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating your own blog series
+title: To New Beginnings
 date: 2019-01-01
 ---
 
