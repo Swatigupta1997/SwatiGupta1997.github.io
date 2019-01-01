@@ -1,6 +1,8 @@
 name: Swati Gupta
 title: Swati Gupta's Website
 theme: jekyll-theme-cayman
+avatar: 
+repository: https://github.com/Swatigupta1997/
 permalink: /blog/:year/:month/:day/:title/
 footer-links:
   email: gupta.swati369@gmail.com
