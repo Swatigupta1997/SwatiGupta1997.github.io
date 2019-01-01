@@ -1,7 +1,14 @@
 ---
 layout: default
 ---
+<script>
+function goBack() {
+  window.history.back()
+}
+</script>
+</head>
 
+<button onclick="goBack()">Go Back</button>
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
