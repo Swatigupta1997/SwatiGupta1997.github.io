@@ -7,8 +7,7 @@ function goBack() {
 }
 </script>
 </head>
-
-<button onclick="goBack()">Go Back</button>
+<body>
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
@@ -24,3 +23,6 @@ function goBack() {
     </article>
   {% endfor %}
 </div>
+</br>
+<button onclick="goBack()">Go Back</button>
+</body>
