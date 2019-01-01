@@ -1,7 +1,8 @@
 name: Swati Gupta
 title: Swati Gupta's Website
 theme: jekyll-theme-cayman
-avatar: https://raw.githubusercontent.com/Swatigupta1997/SwatiGupta1997.github.io/images/mypic.png
+avatar: https://github.com/Swatigupta1997/SwatiGupta1997.github.io/images/mypic.png
+logo: https://github.com/Swatigupta1997/SwatiGupta1997.github.io/images/mypic.png
 repository: https://github.com/Swatigupta1997/
 permalink: /blog/:year/:month/:day/:title/
 footer-links:
