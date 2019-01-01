@@ -1,4 +1,5 @@
-# Swati Gupta                         Go to [blog](blog_home.html)
+# About Me
+## Swati Gupta  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Go to my [blog](blog_home.html)
 I love to tinker with challenging problems that have real world applications. 
 
 ## Fields of Interest
