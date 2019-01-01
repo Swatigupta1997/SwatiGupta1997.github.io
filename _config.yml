@@ -2,6 +2,11 @@ name: Swati Gupta
 title: Swati Gupta's Website
 theme: jekyll-theme-cayman
 permalink: /blog/:year/:month/:day/:title/
+footer-links:
+  email: gupta.swati369@gmail.com
+  github: Swatigupta1997
+  linkedin: swati-gupta-7761b0bb/
+  rss: RSS Feed
 markdown: kramdown
 plugins:
   - jekyll-paginate
