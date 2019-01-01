@@ -1,3 +1,4 @@
 name: Swati Gupta
 theme: jekyll-theme-cayman
-permalink: "/news/:year/:month/:day/:title/"
+permalink: /:title/
+permalink: /:categories/:title/
