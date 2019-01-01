@@ -3,9 +3,10 @@ layout: default
 title: Home Page
 ---
 
-# About Me
-## Swati Gupta  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Go to my [blog](blog_home.html)
-I am a passionate learner, and love solving real world problems that are not only challenging but also require thorough understanding. The recent advances in technology excite me, especially in the areas of robotics and all other fields that overlap with it, like Natural language processing and computer vision. I would love to explore theses fields further.
+## About Me
+ Hi, I am a passionate learner, and love solving real world problems that are not only challenging but also require thorough understanding. The recent advances in technology excite me, especially in the areas of robotics and all other fields that overlap with it, like Natural language processing and computer vision. I would love to explore theses fields further.</br>
+ 
+Go to my [blog](blog_home.html) and explore everyday tips and tricks for coders!
 
 ## Fields of Interest
 - Robotics  
