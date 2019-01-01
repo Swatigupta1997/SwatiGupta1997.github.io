@@ -1,7 +1,3 @@
----
-permalink: /blog_home.html
----
-
 # Swati Gupta
 I love to tinker with challenging problems that have real world applications. 
 
@@ -31,3 +27,5 @@ C • C++ • Python • Pytorch Matlab• OpenCV • Git • ROS • LabView �
 OpenStack • SVM-light/libSVM • Arduino 
 - FAMILAR OS: 
 Linux/Ubuntu • Windows
+
+[blog](blog_home.html)
