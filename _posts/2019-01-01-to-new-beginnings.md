@@ -1,9 +1,10 @@
 ---
-layout: default
+layout: post
 title:  "To New Beginnings!"
+date: 2019-01-01
 ---
 
-# Welcome
+# Welcome to this new blog series
 
 Since this is the beginning of a new year, I have come up with this initiative to compile all that I learn or come across, and find useful in this new blog series. Perhaps, along the way, you may find things of interest here as well. 
 
