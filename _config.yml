@@ -1,7 +1,5 @@
 name: Swati Gupta
 theme: jekyll-theme-cayman
-permalink: /:title/
-permalink: /:categories/:title/
 collections:
   posts:
     permalink: "/news/:year/:month/:day/:title/"
