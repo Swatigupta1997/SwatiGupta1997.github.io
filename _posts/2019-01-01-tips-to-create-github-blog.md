@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Creating your own blog series
-date: "`r format(Sys.time(), '%d %B, %Y')`"
+date: "`r format(Sys.time(), '%B, %Y')`"
 comments: true
 ---
 # Creating a blog using Github and Jkyell
