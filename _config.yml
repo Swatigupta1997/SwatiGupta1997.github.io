@@ -2,8 +2,9 @@ name: Swati Gupta
 title: Swati Gupta's Website
 theme: jekyll-theme-cayman
 disqus: disqus_YVOuNa8Mpc
-avatar: https://github.com/Swatigupta1997/SwatiGupta1997.github.io/images/mypic.png
-logo: https://github.com/Swatigupta1997/SwatiGupta1997.github.io/images/mypic.png
+blog: https://swatigupta1997.github.io/blog_home/
+homepage: https://swatigupta1997.github.io/
+archive: https://swatigupta1997.github.io/
 repository: https://github.com/Swatigupta1997/
 permalink: /blog/:year/:month/:day/:title/
 footer-links:
