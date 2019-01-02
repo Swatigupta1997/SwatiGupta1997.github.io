@@ -4,6 +4,7 @@ title: Creating your own blog series
 comments: true
 date: 2019-01-01
 ---
+# Creating a blog using Github and Jkyell
 
 Hello all!
 
@@ -15,13 +16,13 @@ Another personal reason is that using Github keeps all my things in one place, a
 
 So, Lets get down to buisness!
 
-One easy way is to pull the repo by <a href = https://github.com/barryclark/jekyll-now > barryclark </a> and follow his instructions on minimally editing the repo to make it your own. While this is great for someone who doesnot want to spend time demistifying the logistics, again, that is not the point of this exercise.
+One easy way is to pull the repo by barryclark (https://github.com/barryclark/jekyll-now) and follow his instructions on minimally editing the repo to make it your own. While this is great for someone who doesnot want to spend time demistifying the logistics, again, that is not the point of this exercise.
 
 So we will create our blog from scratch. (With guidance from barry clark ofc!)
 
 
 
-# Creating a blog using Github and Jkyell
+
 
 {% if page.comments %}
 <div id="disqus_thread"></div>
