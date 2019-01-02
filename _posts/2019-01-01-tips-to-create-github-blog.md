@@ -5,6 +5,7 @@ comments: true
 date: 2019-01-01
 ---
 # Creating a blog using Github and Jkyell
+# {{ page.date }}
 
 Hello all!
 
