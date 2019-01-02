@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Creating your own blog series
-date: "`r format(Sys.time(), '%B, %Y')`"
+dates: 2019-01-01 15:30 IST
 comments: true
 ---
 # Creating a blog using Github and Jkyell
-{{ page.date }}
+{{ page.dates }}
 
 Hello all!
 
