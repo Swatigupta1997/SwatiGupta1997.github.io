@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Creating your own blog series
-dates: 2019-01-01 15:30 IST
+dates: 2019-01-03 16:20 IST
 comments: true
 ---
 # Creating a blog using Github and Jkyell
@@ -30,19 +30,20 @@ Some important details:
 - At any point, if you have a doubt, feel free to browse through my repo and see what to do yourself! Else, comment below!
 
 - Step 1: Create your repository with the name: <username>.github.io 
-- Step 2: create default directory structure:
-          - _posts/
-          - _layouts/
-          - _config.yml
-          -  index.md
+- Step 2: create the default directory structure:
+  * _posts/
+  * _layouts/
+  * _config.yml
+  * index.md
+  * blog_home.html (optional, See Explanation)
   
- Explanation:
+Explanation:
 index.md is the default landing page when '<username>.github.io' is visited via url. You can directly make it your blog homepage or you can make this your personal website (like I did) and add a link to another page which can be your blog homepage (ref blog_home.html).</br>
 _config.yml is the YAML file with all the configuration details.
 _posts/ directory is where your blog entries will be kept. naming convention for each blog entry: <year>-<month>-<date>-<title>.md (Ex: 2019-01-01-tips-to-create-github-blog.md)
 _layouts/ directory is where you will put your html layouts. you can have as many as you like, i will only be using one, called 'default.html'
   
-# Update in progress. Hang on!
+## Further update is in progress. Hang on!
 
 
 
