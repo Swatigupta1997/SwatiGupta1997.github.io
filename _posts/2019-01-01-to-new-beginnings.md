@@ -2,6 +2,7 @@
 layout: default
 title: To New Beginnings
 dates: 2019-01-01 10:00 IST
+comments: true
 ---
 
 # Welcome to this new blog series
