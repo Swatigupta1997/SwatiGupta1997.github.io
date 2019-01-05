@@ -43,20 +43,20 @@ Linux/Ubuntu • Windows
    * Built and tested numerous computer vision algorithms to detect chalk lanes on grassy surface and avoid obstacles using sensors like LIDAR and Camera.
    * Created a system for online mapping of surroundings (lanes and obstacles) using continuous LIDAR and camera data stream.
 % Github link: 
-   * Used multiple sensors like GPS, IMU and encoders for robot pose estimation and control</br>
+   * Used multiple sensors like GPS, IMU and encoders for robot pose estimation and control </br>
    [Link to Github Repository](https://github.com/IGVC-IITK/computer_vision) 
 
 - Deep Learning for for Real-Time Image Enhancement
   Course Project, Visual Recognition, IIT Kanpur 
   Aug 2017 – Nov 2017 | Dr Vinay Namboodri, CSE, IIT Kanpur
-   * Successfully implemented the paper by Gharbi, Michaël, et al, titled "Deep Bilateral Learning for Real-Time Image Enhancement" in Pytorch, from scratch using a new convolutional network architecture which preserves edges, details and is computationally very efficient on high resolution images.</br>
+   * Successfully implemented the paper by Gharbi, Michaël, et al, titled "Deep Bilateral Learning for Real-Time Image Enhancement" in Pytorch, from scratch using a new convolutional network architecture which preserves edges, details and is computationally very efficient on high resolution images. </br>
  [Link to Github Repository](https://github.com/harshsinh/deepbilateral)
  
 - Timeline: Cross Document Event Ordering
   Summer Internship, NLP Lab, University of Texas, Dallas, TX
   May 2017 – July 2017 | Dr Vincent Ng, Dept.of CS, UT Dallas, TX
     * Extracted relevant event and time mentions from the NewsReader Dataset using Stanford CoreNLP, an integrated NLP toolkit and performed temporal tagging.
-    * Implemented new kernel methods like Subset Tree kernels based on Dependency trees for Relation extraction and trained an SVM Classifier using them to link events to the correct time instances of their occurrence</br>
+    * Implemented new kernel methods like Subset Tree kernels based on Dependency trees for Relation extraction and trained an SVM Classifier using them to link events to the correct time instances of their occurrence. </br>
   [Link to Report](https://github.com/Swatigupta1997/nlp_intern)
 
 - Voice Controlled Navigation of Robot
@@ -67,7 +67,7 @@ Linux/Ubuntu • Windows
 - Photo Editor
   Course Project, Image Processing, IIT Kanpur 
   Aug 2017 – Dec 2017 | Dr Tanaya Guha, EE, IIT Kanpur
-   * Used NL Means Filtering along with a variant of Adaptive Histogram Equalisation (CLAHE) for Image enhancement, and a pretrained HAAR Cascade classifier for eye detection in the Red Eye Correction function.</br>
+   * Used NL Means Filtering along with a variant of Adaptive Histogram Equalisation (CLAHE) for Image enhancement, and a pretrained HAAR Cascade classifier for eye detection in the Red Eye Correction function. </br>
  [Link to Github Repository](https://github.com/Swatigupta1997/EE604)
 
 - Bluetooth Indoor Navigation
