@@ -14,4 +14,6 @@ Here's to new beginnings! Wishing you all a very happy and prosperous new year..
 
 I hope you like it!
 
-{% include disqus.html %)
+{% if page.comments %}
+  {% include disqus.html %)
+{% endif %}
