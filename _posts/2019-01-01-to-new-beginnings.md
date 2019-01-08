@@ -14,7 +14,7 @@ Here's to new beginnings! Wishing you all a very happy and prosperous new year..
 
 I hope you like it! <br />
 
-[Next](2019-01-01-tips-to-create-github-blog.md)
+[Next Entry](2019-01-01-tips-to-create-github-blog.md)
 
 {% if page.comments %}
   {% include disqus.html %)
