@@ -45,7 +45,7 @@ _layouts/ directory is where you will put your html layouts. you can have as man
   
 ## Further update is in progress. Hang on! <br />
 
-[prev](2019-01-01-to-new-beginnings.md)
+[prev](https://swatigupta1997.github.io/blog/2019/01/01/to-new-beginnings/)
 
 
 {% if page.comments %}
