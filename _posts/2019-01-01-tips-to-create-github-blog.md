@@ -53,7 +53,7 @@ _layouts/ directory is where you will put your html layouts. you can have as man
 <div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
-this.page.url = "https://swatigupta1997.github.io/blog/2019/01/01/to-new-beginnings/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.url = "https://swatigupta1997.github.io/blog/2019/01/01/tips-to-create-github-blog/";  // Replace PAGE_URL with your page's canonical URL variable
 this.page.identifier {{ page.title }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 (function() { // DON'T EDIT BELOW THIS LINE
