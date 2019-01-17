@@ -47,9 +47,10 @@ _layouts/ directory is where you will put your html layouts. you can have as man
 
 [prev](2019-01-01-to-new-beginnings.md)
 
-
+/*
 {% if page.comments %}
 
 {% include disqus.html %}
 
 {% endif %}
+*/
