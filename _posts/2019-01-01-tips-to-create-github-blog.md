@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Creating your own blog series
-dates: 2019-01-03 16:20 IST
+dates: 2019-01-28 19:30 IST
 comments: true
 ---
 # Creating a blog using Github and Jkyell
@@ -11,13 +11,13 @@ Hello all!
 
 I will kickstart with something that forms the very basis of this blog series. Yes, you guessed it right! <b><center>How to create a blog using Github (and Jekyll).</center></b>
 
-You must be wondering, why Github? Why not the many blogging websites available online (blogger, wordpress, medium etc.), which offer an extremely simple setup and smooth GUI experience. A lot less time spent on logistics right? 
-Well, for one, we are coders! Second, the whole point of this exercise is to explore and learn! So, why not learn how to actually create a blog from scratch as the starting point? Github is great in this aspect, as you will actually need to get your hands dirty, and understand how to use Jekyll. 
+You must be wondering, why use Github? Why not one of the numerous micro blogging websites available online (blogger, wordpress, medium etc.), which offers an extremely simple setup and smooth GUI experience. A lot less time spent on logistics right? 
+Well, for one, Where is the fun in that? Afterall, we are coders!  Second, the whole point of this exercise is to explore and learn! So, why not learn how to actually create a blog from scratch as our starting point? Github is great in this aspect, as you will actually need to get your hands dirty, and understand how to use Jekyll. 
 Another personal reason is that using Github keeps all my things in one place, as the rest of my work is on git as well, and this can be just one more repo.
 
 So, Lets get down to buisness!
 
-One easy way is to pull the repo by barryclark (https://github.com/barryclark/jekyll-now) and follow his instructions on minimally editing the repo to make it your own. While this is great for someone who doesnot want to spend time demistifying the logistics, again, that is not the point of this exercise.
+One easy way is to pull the repo by barryclark (https://github.com/barryclark/jekyll-now) and follow his instructions on minimally editing the repo to make it your own. While this is great for someone who does not want to spend time demistifying the logistics, again, that is not the point of this exercise.
 
 So we will create our blog from scratch. (With guidance from barry clark ofc!)
 
@@ -30,7 +30,7 @@ Some important details:
 - At any point, if you have a doubt, feel free to browse through my repo and see what to do yourself! Else, comment below!
 
 - Step 1: Create your repository with the name: <username>.github.io 
-- Step 2: create the default directory structure:
+- Step 2: create the default directory structure in the repo. This is mine:
   * _posts/
   * _layouts/
   * _config.yml
@@ -38,12 +38,59 @@ Some important details:
   * blog_home.html (optional, See Explanation)
   
 Explanation: <br />
-- index.md is the default landing page when '<username>.github.io' is visited via url. You can directly make it your blog homepage or you can make this your personal website (like I did) and add a link to another page which can be your blog homepage (ref blog_home.html). <br />
-- _config.yml is the YAML file with all the configuration details. <br />
-- _posts/ directory is where your blog entries will be kept. naming convention for each blog entry: <year>-<month>-<date>-<title>.md (Ex: 2019-01-01-tips-to-create-github-blog.md) <br />
-- _layouts/ directory is where you will put your html layouts. you can have as many as you like, i will only be using one, called 'default.html'<br />
-  
-## Further update is in progress. Hang on! <br />
+- index.md is the default landing page when '<username>.github.io' is visited via url. You can directly make it your blog homepage or you can make this your personal website (like I did) and add a link to another page which can be your blog homepage (ref blog_home.html). 
+- YAML file '_config.yml' contains all the configuration details of our site.
+- The Directory '_posts/' is where all your blog entries will be kept. Naming convention for each blog entry: <year>-<month>-<day>-<title>.md (Ex: 2019-01-01-tips-to-create-github-blog.md) 
+- The Directory '_layouts/' is where you will put your html layouts for customising the look of your pages/blog. You can have as many as you like, I will keep things simple and only use one, called 'default.html'. I took this layout from one of the themes that jekyll provides called 'jekyll-theme-cayman' and customised it for my purpose. 
+ 
+Ok! Now that we have a grasp of the basic structure, we need to ensure that all things are in place, parameters configured. This is essentially done using the config.yml file. Just add all the global variable values to it in the format:
+<center>variable: value</center>
+and then you can use their values anywhere using {{ site.variable }} format.
+Some useful ones are:
+- name 
+- title
+- theme
+- permalink
+- disqus
+- markdown
+- plugins
+
+Out of these, the one most essential to our blog implementation is permalink. You must set this so jekyll can parse and assign the url of your blog entries (located in the layouts directory). It has to be such that each blog entry will get a unique url.
+So it is a good idea to use the date and blog entry title for this. 
+My permalink setting is: 
+<center> permalink: /blog/:year/:month/:day/:title/ </center>
+So, one of the url's turns out to be: 
+<center> https://swatigupta1997.github.io/blog/2019/01/01/tips-to-create-github-blog/ </center>
+Do yo now realize why we followed a naming convention in naming blog entries before? Yes, you are quite right, that is what gets parsed and provides the info (:year :month :title etc.) to create unique url's for each blog entry!
+<br />
+Another important parameter to note is disqus. This is completely optional ofc. But what is a blog without reader comments?
+I will briefly discuss how to do this. You first need to login to [Disqus](https://disqus.com/) (create an account if you are new.) Then follow the simple instructions there on how to add disqus to your site. Select jekyll as the platform when prompted. They will provide you with the universal code, which you can then embed at the end of your blog entries after editing some config variables. Also, add your disqus shortname to config.yml file. Voila! Comments are enabled.
+<br />
+(The only doubt in this whole process that you may face is- what's a shortname? Lol, I was also confused for half a day. 
+But they actually clearly mention it durig the whole 'Configure Disqus for Your Site' process. If you somehow missed it, no worries. Do this:
+Go to the admin page of your account. Click on the settigs tab, then select the site you just created, ad access it's general settings. you will see your shortname!)
+
+Actually, there is a bit more efficient way to do this, so that you do not have to add the uiversal code to every blog entry by just creating an includes directory and putting the code there, then invoking it from your blog entry. I did not try this out, as I am too lazy. ;)
+
+Some miscellenious info.
+Just like we configured global variables using the layouts.yml file, we can configure page specific variables using YAML front matter to every page in this way: 
+
+<br />
+```
+--- 
+layout: default
+date: xx-xx-xxxx
+title: xxxx
+comments: true
+# other options
+---
+```
+<br />
+
+These variables can then we accessed from within the page as {{ page.variable }}. The layout variable is reserved and when set, will use the layout of the same name from layouts directory for that page.
+<br />
+
+## Well, That's All for today, folks! See you next time.
 
 [Prev Entry](https://swatigupta1997.github.io/blog/2019/01/01/to-new-beginnings/)
 
