@@ -45,7 +45,7 @@ Explanation: <br />
   
 ## Further update is in progress. Hang on! <br />
 
-[prev](https://swatigupta1997.github.io/blog/2019/01/01/to-new-beginnings/)
+[Prev Entry](https://swatigupta1997.github.io/blog/2019/01/01/to-new-beginnings/)
 
 
 
