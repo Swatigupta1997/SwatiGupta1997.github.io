@@ -40,12 +40,12 @@ Some important details:
 Explanation: <br />
 - index.md is the default landing page when '<username>.github.io' is visited via url. You can directly make it your blog homepage or you can make this your personal website (like I did) and add a link to another page which can be your blog homepage (ref blog_home.html). 
 - YAML file '_config.yml' contains all the configuration details of our site.
-- The Directory '_posts/' is where all your blog entries will be kept. Naming convention for each blog entry: <year>-<month>-<day>-<title>.md (Ex: 2019-01-01-tips-to-create-github-blog.md) 
+- The Directory '_posts/' is where all your blog entries will be kept. Naming convention for each blog entry: year-month-day-title.md (Ex: 2019-01-01-tips-to-create-github-blog.md) 
 - The Directory '_layouts/' is where you will put your html layouts for customising the look of your pages/blog. You can have as many as you like, I will keep things simple and only use one, called 'default.html'. I took this layout from one of the themes that jekyll provides called 'jekyll-theme-cayman' and customised it for my purpose. 
  
 Ok! Now that we have a grasp of the basic structure, we need to ensure that all things are in place, parameters configured. This is essentially done using the config.yml file. Just add all the global variable values to it in the format:
 <center>variable: value</center>
-and then you can use their values anywhere using {{ site.variable }} format.
+and then you can use their values anywhere using 'site.variable' enclosed in curly braces format.
 Some useful ones are:
 - name 
 - title
@@ -78,8 +78,9 @@ Some miscellenious info.
 Just like we configured global variables using the layouts.yml file, we can configure page specific variables using YAML front matter to every page by adding this at its beginning: 
 
 <br />
+
 ```
---- 
+---
 layout: default
 date: xx-xx-xxxx
 title: xxxx
@@ -89,7 +90,7 @@ comments: true
 ```
 <br />
 
-These variables can then we accessed from within the page as `{{ page.variable }}`. Here, the _layout_ variable is reserved and when set, will use the layout of the same name from layouts directory for that page.
+These variables can then we accessed from within the page as page.variable enclosed in double curly braces . Here, the _layout_ variable is reserved and when set, will use the layout of the same name from layouts directory for that page.
 <br />
 
 ## Well, That's All for today, folks! See you next time.
