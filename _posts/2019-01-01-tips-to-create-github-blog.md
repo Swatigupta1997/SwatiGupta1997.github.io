@@ -38,14 +38,15 @@ Some important details:
   * blog_home.html (optional, See Explanation)
   
 Explanation: <br />
-index.md is the default landing page when '<username>.github.io' is visited via url. You can directly make it your blog homepage or you can make this your personal website (like I did) and add a link to another page which can be your blog homepage (ref blog_home.html). <br />
-_config.yml is the YAML file with all the configuration details. <br />
-_posts/ directory is where your blog entries will be kept. naming convention for each blog entry: <year>-<month>-<date>-<title>.md (Ex: 2019-01-01-tips-to-create-github-blog.md) <br />
-_layouts/ directory is where you will put your html layouts. you can have as many as you like, i will only be using one, called 'default.html'<br />
+- index.md is the default landing page when '<username>.github.io' is visited via url. You can directly make it your blog homepage or you can make this your personal website (like I did) and add a link to another page which can be your blog homepage (ref blog_home.html). <br />
+- _config.yml is the YAML file with all the configuration details. <br />
+- _posts/ directory is where your blog entries will be kept. naming convention for each blog entry: <year>-<month>-<date>-<title>.md (Ex: 2019-01-01-tips-to-create-github-blog.md) <br />
+- _layouts/ directory is where you will put your html layouts. you can have as many as you like, i will only be using one, called 'default.html'<br />
   
 ## Further update is in progress. Hang on! <br />
 
 [prev](https://swatigupta1997.github.io/blog/2019/01/01/to-new-beginnings/)
+
 
 
 {% if page.comments %}
@@ -53,9 +54,8 @@ _layouts/ directory is where you will put your html layouts. you can have as man
 <div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
-this.page.url = "https://swatigupta1997.github.io/blog/2019/01/01/tips-to-create-github-blog/";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = disqus_YVOuNa8Mpc; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-this.page.title = {{ page.title }};
+this.page.url = https://swatigupta1997.github.io/;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier disqus_YVOuNa8Mpc; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
@@ -64,6 +64,8 @@ s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 {% endif %}
 
