@@ -55,6 +55,7 @@ Some useful ones are:
 - markdown
 - plugins
 <br />
+<br />
 Out of all these, the one most essential to our blog implementation is __permalink__. You must set this parameter so jekyll can parse and assign urls to your blog entries (which are located in the layouts directory). It has to be such that each blog entry will get a unique url. <br />
 So it is a good idea to use the date and blog-entry title for this purpose . 
 My permalink setting is: 
