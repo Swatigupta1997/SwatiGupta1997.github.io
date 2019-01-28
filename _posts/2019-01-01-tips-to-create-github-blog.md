@@ -40,7 +40,7 @@ Some important details:
 Explanation: <br />
 - index.md is the default landing page when '<username>.github.io' is visited via url. You can directly make it your blog homepage or you can make this your personal website (like I did) and add a link to another page which can be your blog homepage (ref blog_home.html). 
 - YAML file '_config.yml' contains all the configuration details of our site.
-- The Directory '_posts/' is where all your blog entries will be kept. Naming convention for each blog entry: year-month-day-title.md (Ex: 2019-01-01-tips-to-create-github-blog.md) 
+- The Directory '_posts/' is where all your blog entries will be kept. Naming convention for each blog entry: (year-month-day-title) (Ex: 2019-01-01-tips-to-create-github-blog.md) 
 - The Directory '_layouts/' is where you will put your html layouts for customising the look of your pages/blog. You can have as many as you like, I will keep things simple and only use one, called 'default.html'. I took this layout from one of the themes that jekyll provides called 'jekyll-theme-cayman' and customised it for my purpose. 
  
 Ok! Now that we have a grasp of the basic structure, we need to ensure that all things are in place, parameters configured. This is essentially done using the config.yml file. Just add all the global variable values to it in the format:
@@ -54,8 +54,8 @@ Some useful ones are:
 - disqus
 - markdown
 - plugins
-
-Out of all these, the one most essential to our blog implementation is __permalink__. You must set this parameter so jekyll can parse and assign urls to your blog entries (which are located in the layouts directory). It has to be such that each blog entry will get a unique url.
+<br />
+Out of all these, the one most essential to our blog implementation is __permalink__. You must set this parameter so jekyll can parse and assign urls to your blog entries (which are located in the layouts directory). It has to be such that each blog entry will get a unique url. <br />
 So it is a good idea to use the date and blog-entry title for this purpose . 
 My permalink setting is: 
 <center> permalink: /blog/:year/:month/:day/:title/ </center>
@@ -63,20 +63,19 @@ So, one of the blog entry urls turns out to be:
 <center> https://swatigupta1997.github.io/blog/2019/01/01/tips-to-create-github-blog/ </center>
 Do you now realize why we followed a convention in naming blog entries before? <br />
 Yes, you are quite right, that is what gets parsed and provides the necessary info (:year :month :title etc.) to create unique url's for each blog entry!
-<br />
+<br /> <br />
 Another important parameter to note is __disqus__. This is completely optional ofc. But what is a blog without reader comments?
 I will briefly discuss how use this one. <br />
 You first need to login to [Disqus](https://disqus.com/) (create an account if you are new.) Then follow the simple instructions there on how to 'Configure Disqus for Your Site'. Select jekyll as the platform when prompted. They will provide you with the universal code, which you can then embed at the end of your blog entries (after editing some config variables). Also, add your disqus shortname to config.yml file under the disqus parameter. Voila! Comments are now enabled.
-<br />
+<br /> <br />
 (The only doubt in this whole process that you may face is- what's a shortname? Lol, I was also confused for half a day. 
-But they actually clearly mention it during the whole 'Configure Disqus for Your Site' process. If you somehow missed it, no worries. Try this:
+But they actually clearly mention it during the whole 'Configure Disqus for Your Site' process. If you somehow missed it, no worries. Try this: <br />
 Go to the admin page of your account. Click on the settigs tab, then select the site you just created, ad access it's general settings. you will see your shortname!) <br />
 
 Actually, there is a bit more efficient way to do this, so that you do not have to add the universal code to every blog entry, by just creating an _includes_ directory and putting the code there, then invoking it from your blog entry. I did not try this out, as I am too lazy. ;)
-
-Some miscellenious info.
+<br />
+Some miscellenious info. <br />
 Just like we configured global variables using the layouts.yml file, we can configure page specific variables using YAML front matter to every page by adding this at its beginning: 
-
 <br />
 
 ```
