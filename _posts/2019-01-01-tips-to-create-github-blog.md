@@ -54,7 +54,7 @@ _layouts/ directory is where you will put your html layouts. you can have as man
 <script>
 var disqus_config = function () {
 this.page.url = "https://swatigupta1997.github.io/blog/2019/01/01/tips-to-create-github-blog/";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = {{ page.title }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.identifier = disqus_YVOuNa8Mpc; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 this.page.title = {{ page.title }};
 };
 (function() { // DON'T EDIT BELOW THIS LINE
