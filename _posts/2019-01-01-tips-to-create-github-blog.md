@@ -55,25 +55,27 @@ Some useful ones are:
 - markdown
 - plugins
 
-Out of these, the one most essential to our blog implementation is permalink. You must set this so jekyll can parse and assign the url of your blog entries (located in the layouts directory). It has to be such that each blog entry will get a unique url.
-So it is a good idea to use the date and blog entry title for this. 
+Out of all these, the one most essential to our blog implementation is __permalink__. You must set this parameter so jekyll can parse and assign urls to your blog entries (which are located in the layouts directory). It has to be such that each blog entry will get a unique url.
+So it is a good idea to use the date and blog-entry title for this purpose . 
 My permalink setting is: 
 <center> permalink: /blog/:year/:month/:day/:title/ </center>
-So, one of the url's turns out to be: 
+So, one of the blog entry urls turns out to be: 
 <center> https://swatigupta1997.github.io/blog/2019/01/01/tips-to-create-github-blog/ </center>
-Do yo now realize why we followed a naming convention in naming blog entries before? Yes, you are quite right, that is what gets parsed and provides the info (:year :month :title etc.) to create unique url's for each blog entry!
+Do you now realize why we followed a convention in naming blog entries before? <br />
+Yes, you are quite right, that is what gets parsed and provides the necessary info (:year :month :title etc.) to create unique url's for each blog entry!
 <br />
-Another important parameter to note is disqus. This is completely optional ofc. But what is a blog without reader comments?
-I will briefly discuss how to do this. You first need to login to [Disqus](https://disqus.com/) (create an account if you are new.) Then follow the simple instructions there on how to add disqus to your site. Select jekyll as the platform when prompted. They will provide you with the universal code, which you can then embed at the end of your blog entries after editing some config variables. Also, add your disqus shortname to config.yml file. Voila! Comments are enabled.
+Another important parameter to note is __disqus__. This is completely optional ofc. But what is a blog without reader comments?
+I will briefly discuss how use this one. <br />
+You first need to login to [Disqus](https://disqus.com/) (create an account if you are new.) Then follow the simple instructions there on how to 'Configure Disqus for Your Site'. Select jekyll as the platform when prompted. They will provide you with the universal code, which you can then embed at the end of your blog entries (after editing some config variables). Also, add your disqus shortname to config.yml file under the disqus parameter. Voila! Comments are now enabled.
 <br />
 (The only doubt in this whole process that you may face is- what's a shortname? Lol, I was also confused for half a day. 
-But they actually clearly mention it durig the whole 'Configure Disqus for Your Site' process. If you somehow missed it, no worries. Do this:
-Go to the admin page of your account. Click on the settigs tab, then select the site you just created, ad access it's general settings. you will see your shortname!)
+But they actually clearly mention it during the whole 'Configure Disqus for Your Site' process. If you somehow missed it, no worries. Try this:
+Go to the admin page of your account. Click on the settigs tab, then select the site you just created, ad access it's general settings. you will see your shortname!) <br />
 
-Actually, there is a bit more efficient way to do this, so that you do not have to add the uiversal code to every blog entry by just creating an includes directory and putting the code there, then invoking it from your blog entry. I did not try this out, as I am too lazy. ;)
+Actually, there is a bit more efficient way to do this, so that you do not have to add the universal code to every blog entry, by just creating an _includes_ directory and putting the code there, then invoking it from your blog entry. I did not try this out, as I am too lazy. ;)
 
 Some miscellenious info.
-Just like we configured global variables using the layouts.yml file, we can configure page specific variables using YAML front matter to every page in this way: 
+Just like we configured global variables using the layouts.yml file, we can configure page specific variables using YAML front matter to every page by adding this at its beginning: 
 
 <br />
 ```
@@ -87,10 +89,11 @@ comments: true
 ```
 <br />
 
-These variables can then we accessed from within the page as {{ page.variable }}. The layout variable is reserved and when set, will use the layout of the same name from layouts directory for that page.
+These variables can then we accessed from within the page as `{{ page.variable }}`. Here, the _layout_ variable is reserved and when set, will use the layout of the same name from layouts directory for that page.
 <br />
 
 ## Well, That's All for today, folks! See you next time.
+Post your doubts and I will try to clarify!
 
 [Prev Entry](https://swatigupta1997.github.io/blog/2019/01/01/to-new-beginnings/)
 
