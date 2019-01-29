@@ -25,7 +25,7 @@ So we will create our blog from scratch. (With guidance from barry clark ofc!)
 Not many, just be comfortable using Github, and basic html/markdown.
 
 #### Some important details:
-- hey, What's Jekyll? : Jekyll is a parsing engine (written in ruby by Github's cofounder) used to build static websites from dynamic components such as templates, partials, liquid code, markdown, html, css etc. Jekyll is known as "a simple, blog aware, static site generator".
+- Hey, What's Jekyll? : Jekyll is a parsing engine (written in ruby by Github's cofounder) used to build static websites from dynamic components such as templates, partials, liquid code, markdown, html, css etc. Jekyll is known as "a simple, blog aware, static site generator".
 - We are not going to atempt something fancy here. If you are good with html/css, go ahead and add fancier elements to the blog/website. I will be using one of the already available themes.
 - At any point, if you have a doubt, feel free to browse through my repo and see what to do yourself! Else, comment below!
 
@@ -43,7 +43,7 @@ Not many, just be comfortable using Github, and basic html/markdown.
 - The Directory '_posts/' is where all your blog entries will be kept. Naming convention for each blog entry: (year-month-day-title) (Ex: 2019-01-01-tips-to-create-github-blog.md) 
 - The Directory '_layouts/' is where you will put your html layouts for customising the look of your pages/blog. You can have as many as you like, I will keep things simple and only use one, called 'default.html'. I took this layout from one of the themes that jekyll provides called 'jekyll-theme-cayman' and customised it for my purpose. 
  
-Ok! Now that we have a grasp of the basic structure, we need to ensure that all things are in place, parameters configured. This is essentially done using the _config.yml_ file. Just add all the global variable values to it in the format:
+Ok! Now that we have a grasp of the basic structure, we need to ensure that all things are in place, parameters configured. This is essentially done using the _config.yml file. Just add all the global variable values to it in the format:
 <center>variable: value</center>
 Then you can use these variable values anywhere using ('site.variable' enclosed in curly braces) format.
 Some useful ones are:
@@ -56,7 +56,7 @@ Some useful ones are:
 - plugins
 <br />
 <p>
-Out of all these, the one most essential to our blog implementation is __permalink__. You must set this parameter so jekyll can parse and assign urls to your blog entries (which are located in the _posts_ directory). It has to be such that each blog entry will get a unique url. </p>
+Out of all these, the one most essential to our blog implementation is permalink. You must set this parameter so jekyll can parse and assign urls to your blog entries (which are located in the _posts directory). It has to be such that each blog entry will get a unique url. </p>
  <br />
 So it is a good idea to use a combination of date and blog-entry title to ensure uniqueness . 
 My permalink setting is: 
@@ -66,15 +66,15 @@ Which is why, one of the blog entry url turns out to be:
 Do you now realize why we followed a convention in naming blog entries before? <br />
 Yes, you are quite right, that is what gets parsed and provides the necessary info (:year :month :title etc.) to create unique url's for each blog entry!
 <br /> <br />
-Another important parameter to note is __disqus__. This is completely optional ofc. But what is a blog without reader comments?
+Another important parameter to note is disqus. This is completely optional ofc. But what is a blog without reader comments?
 I will briefly discuss how use this one. <br />
-You first need to login to [Disqus](https://disqus.com/) (create an account if you are new.) Then follow the simple instructions there on how to 'Configure Disqus for Your Site'. Select jekyll as the platform when prompted. They will provide you with the universal code, which you can then embed at the end of your blog entries (after editing some config variables). Also, add your disqus shortname to config.yml file under the disqus parameter. Voila! Comments are now enabled.
+You first need to login to [Disqus](https://disqus.com/) (create an account if you are new.) Then follow the simple instructions there on how to 'Configure Disqus for Your Site'. Select jekyll as the platform when prompted. They will provide you with the universal code, which you can then embed at the end of your blog entries (after editing some config variables). Also, add your disqus shortname to _config.yml file under the disqus parameter. Voila! Comments are now enabled.
 <br /> <br />
-(The only doubt in this whole process that you may face is- what's a _shortname_? 
+(The only doubt in this whole process that you may face is - what's a shortname? 
 Actually, disqus clearly mentions it during the whole 'Configure Disqus for Your Site' process. If you somehow missed it, no worries. Try this: <br />
 Go to the admin page of your account. Click on the settigs tab, then select the site you just created, ad access it's general settings. you will see your shortname!) <br />
 
-Infact, there is a bit more efficient way to do this, so that you do not have to add the universal code to every blog entry:  Just create an _includes_ directory and putting the code there, then invoke it from your blog entry. I did not try this out, as I am too lazy. ;)
+Infact, there is a bit more efficient way to do this, so that you do not have to add the universal code to every blog entry:  Just create an _includes directory and putting the code there, then invoke it from your blog entry. I did not try this out, as I am too lazy. ;)
 <br />
 #### Some miscellenious info. 
 
