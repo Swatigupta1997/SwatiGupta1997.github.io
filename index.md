@@ -37,7 +37,7 @@ Linux/Ubuntu • Windows
 
 ## Some Cool Projects I have worked on:
 
-#### Intelligent Autonomous Ground Vehicle 
+- Intelligent Autonomous Ground Vehicle 
 <br />
   Team Leader and Computer Vision Head, Team IGVC, IIT Kanpur <br />
   Sept 2016 – April 2017 | Dr Gaurav Pandey, EE, IIT Kanpur
@@ -46,14 +46,14 @@ Linux/Ubuntu • Windows
    * Used multiple sensors like GPS, IMU and encoders for robot pose estimation and control <br />
    [Link to Github Repository](https://github.com/IGVC-IITK/computer_vision) 
 <br />
-#### Deep Learning for for Real-Time Image Enhancement 
+- Deep Learning for for Real-Time Image Enhancement 
 <br />
   Course Project, Visual Recognition, IIT Kanpur <br />
   Aug 2017 – Nov 2017 | Dr Vinay Namboodri, CSE, IIT Kanpur
    * Successfully implemented the paper by Gharbi, Michaël, et al, titled "Deep Bilateral Learning for Real-Time Image Enhancement" in Pytorch, from scratch using a new convolutional network architecture which preserves edges, details and is computationally very efficient on high resolution images. <br />
  [Link to Github Repository](https://github.com/harshsinh/deepbilateral)
  <br />
-#### Timeline: Cross Document Event Ordering 
+- Timeline: Cross Document Event Ordering 
 <br />
   Summer Internship, NLP Lab, University of Texas, Dallas, TX <br />
   May 2017 – July 2017 | Dr Vincent Ng, Dept.of CS, UT Dallas, TX
@@ -61,26 +61,26 @@ Linux/Ubuntu • Windows
     * Implemented new kernel methods like Subset Tree kernels based on Dependency trees for Relation extraction and trained an SVM Classifier using them to link events to the correct time instances of their occurrence. <br />
   [Link to Report](https://github.com/Swatigupta1997/nlp_intern)
 <br />
-#### Voice Controlled Navigation of Robot 
+- Voice Controlled Navigation of Robot 
 <br />
   Under Graduate Project, IIT Kanpur  <br />
   Aug 2017 – Dec 2017 | Dr Mangal Kothari, AE, IIT Kanpur
     * Created a virtual robotic system controllable by voice commands, using Amazon Alexa and Robot Operating System (ROS) by creating a custom Alexa skill and utilizing ROSbridge library.
 <br />
-#### Photo Editor 
+- Photo Editor 
 <br />
   Course Project, Image Processing, IIT Kanpur <br />
   Aug 2017 – Dec 2017 | Dr Tanaya Guha, EE, IIT Kanpur 
    * Used NL Means Filtering along with a variant of Adaptive Histogram Equalisation (CLAHE) for Image enhancement, and a pretrained HAAR Cascade classifier for eye detection in the Red Eye Correction function. <br />
  [Link to Github Repository](https://github.com/Swatigupta1997/EE604)
 <br />
-#### Bluetooth Indoor Navigation 
+- Bluetooth Indoor Navigation 
 <br />
   Course Project, Cyber Physical and Embedded systems <br />
   Aug 2016 – Nov 2016 | Dr Indranil Saha, CSE, IIT Kanpur
    * Designed a robotic system capable of indoor navigation using bluetooth and ultrasonics.
 <br />
-#### Clean energy - ABU Robocon 2016 
+- Clean energy - ABU Robocon 2016 
 <br />
   Senior Member, Team Robocon IIT Kanpur <br />
   Sept 2015-Mar 2016 | Dr Bhaskar Das Gupta, Center for Mechatronics, IIT Kanpur
