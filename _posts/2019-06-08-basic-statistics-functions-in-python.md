@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Basic statistics functions in python
+title: basic statistics functions in python
 dates: 2019-06-08 14:30 IST
 comments: true
 ---
@@ -73,7 +73,7 @@ df_std = df['Marks'].std(ddof = 0); df_std
 df_fd = df['Subject'].value_counts(); df_fd
 ```
 
-#### Frequency distribution for continuous variables 
+#### Frequency distribution for continuous variables: 
 visualization using histograms:
 
 ```
@@ -82,7 +82,6 @@ import matplotlib.pyplot as plt
 plt.hist(x='Marks', data=df, bins=5)
 plt.show()
 ```
-<br />
 
 ### Well, That's All for today, folks! See you next time.
 Post your thoughts or additions to the list!
