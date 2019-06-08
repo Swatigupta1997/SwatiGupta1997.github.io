@@ -37,7 +37,7 @@ Linux/Ubuntu • Windows
 
 ## Some Cool Projects I have worked on:
 
-### Intelligent Autonomous Ground Vehicle <br />
+- Intelligent Autonomous Ground Vehicle <br />
   Team Leader and Computer Vision Head, Team IGVC, IIT Kanpur <br />
   Sept 2016 – April 2017 | Dr Gaurav Pandey, EE, IIT Kanpur
    * Built and tested numerous computer vision algorithms to detect chalk lanes on grassy surface and avoid obstacles using sensors like LIDAR and Camera.
@@ -45,7 +45,7 @@ Linux/Ubuntu • Windows
    * Used multiple sensors like GPS, IMU and encoders for robot pose estimation and control <br />
    [Link to Github Repository](https://github.com/IGVC-IITK/computer_vision) 
    <br /> <br />
-### Deep Learning for for Real-Time Image Enhancement <br />
+- Deep Learning for for Real-Time Image Enhancement <br />
   Course Project, Visual Recognition, IIT Kanpur <br />
   Aug 2017 – Nov 2017 | Dr Vinay Namboodri, CSE, IIT Kanpur
    * Successfully implemented the paper by Gharbi, Michaël, et al, titled "Deep Bilateral Learning for Real-Time Image Enhancement" in Pytorch, from scratch using a new convolutional network architecture which preserves edges, details and is computationally very efficient on high resolution images. <br />
@@ -80,7 +80,7 @@ Linux/Ubuntu • Windows
    * Developed 2 semi-autonomous Robots, with one providing non-contact driving energy to propagate the other on a complex path, then exchange a wind propeller to climb up a Wind Turbine Pole (about 2m) in automated mode.
    <br /><br />
 - Robominton -  ABU Robocon 2015 <br />
-  Junior Member, Team Robocon IIT Kanpur} <br />
+  Junior Member, Team Robocon IIT Kanpur <br />
   Sept 2014-Mar 2015 | Dr Bhaskar Das Gupta, Center for Mechatronics, IIT Kanpur
    * Developed 2 Semi-Autonomous badminton playing robots capable of playing on a Standard Doubles Badminton Court.
 <br /><br />
