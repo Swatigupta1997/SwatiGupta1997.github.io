@@ -9,7 +9,7 @@ Last Updated: {{ page.dates }}
 
 Hello all!
 
-Long time no see! Well, I was recently using some basic statistics functions in python (using pandas which is a very useful python library for data science), and realized that I should properly compile them here for easy future reference.
+Long time no see! Well, I was recently using some basic statistics functions in python (using pandas which is a very useful python library for data science), and felt that I should properly compile them here for easy future reference.
 
 #### So, Lets get down to buisness!
 
@@ -20,9 +20,8 @@ import pandas as pd
 df = pd.read_csv("data.csv")
 df.head()
 ```
-<br />
 
-### Mesures of central tendency:
+### Measures of central tendency:
 
 #### Mode: 
 
