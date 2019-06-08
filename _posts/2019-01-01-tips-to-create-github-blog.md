@@ -99,7 +99,7 @@ These variables can then we accessed from within the page as page.variable enclo
 Post your doubts and I will try to clarify!
 
 [Prev Entry](https://swatigupta1997.github.io/blog/2019/01/01/to-new-beginnings/)
-[Next Entry](https://swatigupta1997.github.io/blog/2019/06/08/basic-statistics-functions-in-python/)
+<div style="text-align: right"> [Next Entry](https://swatigupta1997.github.io/blog/2019/06/08/basic-statistics-functions-in-python/) </div>
 
 
 {% if page.comments %}
