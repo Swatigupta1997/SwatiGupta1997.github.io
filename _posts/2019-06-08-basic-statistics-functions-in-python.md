@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Basic statistics functions on python
+title: Basic statistics functions in python
 dates: 2019-06-08 14:30 IST
 comments: true
 ---
-# Creating a blog using Github and Jkyell
+# Basic statistics functions in python
 Last Updated: {{ page.dates }}
 
 Hello all!
@@ -13,7 +13,7 @@ Long time no see! Well, I was recently using some basic statistics functions in 
 
 #### So, Lets get down to buisness!
 
-first, import the pandas library, and load your dataset. I am assuming the dataset to be one that contains student marks for various subjects, for ease of understanding.
+First, import the pandas library in your jupyter notebook, and load your dataset as shown below. I am assuming the dataset to be one that contains student marks for various subjects, for ease of understanding.
 
 ```
 import pandas as pd
@@ -22,59 +22,60 @@ df.head()
 ```
 <br />
 
-# Mesures of central tendency:
+### Mesures of central tendency:
 
-## Mode: 
+#### Mode: 
 
 ```
 df_mode = df['Marks'].mode(); df_mode
 ```
 
-## Median:
+#### Median:
 
 ```
 df_median = df['Marks'].median(); df_median
 ```
 
-## Mean:
+#### Mean:
 
 ```
 df_mean = df['Marks'].mean(); df_mean
 ```
 
-# Measures of data spread:
+### Measures of data spread:
 
-## Range:
+#### Range:
 
 ```
 df_r = df['Marks'].max()-df['Marks'].min(); df_r
 ```
 
-## Inter-Quartile Range:
+#### Inter-Quartile Range:
 
 ```
 df_iqr = df['Marks'].quantile(0.75)-df['Marks'].quantile(0.25); df_iqr
 ```
 
-## Variance:
+#### Variance:
 
 ```
 df_var = df['Marks'].var(ddof = 0); df_var
 ```
-## Standard Deviation:
+
+#### Standard Deviation:
 
 ```
 df_std = df['Marks'].std(ddof = 0); df_std
 ```
 
-## Frequency distribution for categorical variables:
+#### Frequency distribution for categorical variables:
 
 ```
 df_fd = df['Subject'].value_counts(); df_fd
 ```
 
-## Frequency distribution for continuous variables 
-### (visualization using histograms):
+#### Frequency distribution for continuous variables 
+visualization using histograms:
 
 ```
 import matplotlib.pyplot as plt
@@ -84,7 +85,7 @@ plt.show()
 ```
 <br />
 
-## Well, That's All for today, folks! See you next time.
+### Well, That's All for today, folks! See you next time.
 Post your thoughts or additions to the list!
 
 [Prev Entry](https://swatigupta1997.github.io/blog/2019/01/01/tips-to-create-github-blog/)
