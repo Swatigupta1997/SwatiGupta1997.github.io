@@ -5,6 +5,7 @@ disqus: swatiguptablog-1
 blog: https://swatigupta1997.github.io/blog_home/
 homepage: https://swatigupta1997.github.io/
 resume: https://swatigupta1997.github.io/resume_swatigupta.pdf
+flower: https://obj-det.onrender.com/
 repository: https://github.com/Swatigupta1997/
 permalink: /blog/:year/:month/:day/:title/
 paginate: 1
