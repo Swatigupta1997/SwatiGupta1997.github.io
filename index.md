@@ -88,3 +88,7 @@ Linux/Ubuntu • Windows
   Sept 2014-Mar 2015 | Dr Bhaskar Das Gupta, Center for Mechatronics, IIT Kanpur
    * Developed 2 Semi-Autonomous badminton playing robots capable of playing on a Standard Doubles Badminton Court.
 <br /><br />
+
+<br />
+
+“Change is the end result of all true learning.” – Leo Buscaglia
