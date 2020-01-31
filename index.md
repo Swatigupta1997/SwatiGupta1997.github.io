@@ -4,11 +4,12 @@ title: Home Page
 ---
 
 ## About Me
- Hi, I am a passionate learner, and love solving real world problems that are not only challenging but also require thorough understanding. The recent advances in technology excite me, especially in the areas of robotics and all other fields that overlap with it, like Natural language processing and computer vision. I would love to explore these fields further.
+ Hi, I am a passionate learner, and love solving real world problems that are not only challenging but also require thorough understanding. The recent advances in technology excite me, especially in the areas of HCI and intelligent robotics, along with the fusion of the two - Human-Robot Interaction. I would love to explore these fields further.
  
 Go to my [BLOG](blog_home.html) and explore everyday tips and tricks for coders!
 
 ## Fields of Interest
+- Human Computer Interaction
 - Robotics  
 - Computer Vision
 - Machine Learning 
@@ -20,12 +21,15 @@ Go to my [BLOG](blog_home.html) and explore everyday tips and tricks for coders!
 ## Work Experience
 Juniper Networks, Bangalore, India<br/>
 Software Engineer (II)<br/>
-July 2018 - Present | Bangalore
+July 2018 - Present | Bangalore <br/>
+
+Currently building artchitectural, software and other user specific solutions for Dvaita: The Junos Node Slicing (Virtualisation) project.
+Junos Node Slicing enables service providers and large enterprises to create a network infrastructure that consolidates multiple routing functions into a single physical device. This helps leverage the benefits of virtualization without compromising on performance, by enabling the convergence of multiple services on a single physical infrastructure.
 
 ## Education
 Indian Institute of Technology, Kanpur (IITK) <br/>
 B.Tech. in Electrical Eng. with a Minor in English Lit. <bt/>
-July 2014 - April 2018 | Kanpur
+July 2014 - April 2018 | Kanpur, India
 
 ## Skill Set
 - PROGRAMMING: <br/>
