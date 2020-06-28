@@ -4,7 +4,7 @@ title: Distrubuted Systems Notes
 dates: 2020-06-28 14:30 IST
 comments: true
 ---
-#Distributed Systems
+# Distributed Systems
 
 ## Definition:
 Multiple computers working on a single goal, presenting an abstraction of being a single unit to the user
@@ -16,28 +16,32 @@ Multiple computers working on a single goal, presenting an abstraction of being 
 
 ### Examples:
 ```
-[ correct ] Amazon.com
-[ correct ] Cassandra DB ( Non relational NoSQL DB with horizontal scaling )
-[ Incorrect ]. My computer: Processors and drivers share a common clock
+[ correct ]   Amazon.com
+[ correct ]   Cassandra DB ( Non relational NoSQL DB with horizontal scaling )
+[ Incorrect ] My computer: Processors and drivers share a common clock
 ```
 
 ## Distributed Storage
 
 ### Strategies:
 	Simple ones (Based on relational paradigm with tweaks)
+	
 -	Read Replication: Single master, multiple followers. Good for Read heavy systems. May sacrifice consistency as write updates may not propagate fast enough.
 Bottleneck at the main node’s write operations.
 -	Sharding: Multiple bins/shards based on keys with each shard following read-replication. Solves the bottleneck on write ops by dividing write traffic.
 Problems: limited data model (key must be common across all tables), limited data access capability (can only query based on key or else do a scatter/gather)
 
 -	Consistent Hashing/Distributed Hash Table (DHT)/Dynamo style DB (Amazon internal)/cassandra DB
+```
 
--	Hash the key. Nodes distributed in a ring with tokens/hash ranges assigned. The key is distributed based on hash value. Data is balanced. No Single master
+Hash the key. Nodes distributed in a ring with tokens/hash ranges assigned. The key is distributed based on hash value. Data is balanced. No Single master
 
--	Very scalable. Always online (Need not shut it down to introduce new nodes)
+Very scalable. Always online (Need not shut it down to introduce new nodes)
+```
 But data redundancy is gone. Single copy of data at each node, so may get lost. Solution: Copy to three neighbor nodes instead of one.  
 We introduced a problem! Consistency will take a hit. 
-So there is a tradeoff
+So there is a tradeoff:
+
 
 ```
 R+W>N
@@ -52,13 +56,13 @@ We may sacrifice consistency in this case. (may not always get the most recent w
 ### Why use consistent hashing?
 Scale, good for transactional data (many reads and writes), always online
 
+### CAP Theorem
 ```
-CAP Theorem
 C – consistency ( When a read is performed, I am getting the last recently updated write?)
 A – Availability ( Am I always getting a response to any read/write)
 P – Partition tolerance ( Some of the nodes may not be able to talk/respond to others for a period of time) – Am I able to handle the mess when partition has been healed?
 ```
-### Systems cannot have these 3 all together.
+#### Systems cannot have these 3 all together.
 
 In distributed systems, we are anchored in P. So we must choose and trade-off b/w C and A.
 
@@ -88,7 +92,9 @@ Break problems into the kinds of pieces that lend themselves well to distributed
 2 functions: 
 - Mapper and 
 - reducer
+```
 we're trying to move our compute to where our data is, not move the data around, and get all our work done in these two functions.
+```
 
 Example on WordCount:
 ```
