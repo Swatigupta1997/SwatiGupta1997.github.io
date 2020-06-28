@@ -18,7 +18,7 @@ Multiple computers working on a single goal, presenting an abstraction of being 
 ```
 [ correct ]   Amazon.com
 [ correct ]   Cassandra DB ( Non relational NoSQL DB with horizontal scaling )
-[ Incorrect ] My computer: Processors and drivers share a common clock
+[ Incorrect ] My computer -  Processors and drivers share a common clock
 ```
 
 ## Distributed Storage
@@ -32,10 +32,9 @@ Bottleneck at the main node’s write operations.
 Problems: limited data model (key must be common across all tables), limited data access capability (can only query based on key or else do a scatter/gather)
 
 -	Consistent Hashing/Distributed Hash Table (DHT)/Dynamo style DB (Amazon internal)/cassandra DB
+
 ```
-
 Hash the key. Nodes distributed in a ring with tokens/hash ranges assigned. The key is distributed based on hash value. Data is balanced. No Single master
-
 Very scalable. Always online (Need not shut it down to introduce new nodes)
 ```
 But data redundancy is gone. Single copy of data at each node, so may get lost. Solution: Copy to three neighbor nodes instead of one.  
@@ -54,6 +53,7 @@ N - Total no of replicas (In our case=3)
 We may sacrifice consistency in this case. (may not always get the most recent write update on a new read) if we want better latency. (Do not wish to wait for read/write confirmations)
  
 ### Why use consistent hashing?
+
 Scale, good for transactional data (many reads and writes), always online
 
 ### CAP Theorem
@@ -92,11 +92,13 @@ Break problems into the kinds of pieces that lend themselves well to distributed
 2 functions: 
 - Mapper and 
 - reducer
+
 ```
 we're trying to move our compute to where our data is, not move the data around, and get all our work done in these two functions.
 ```
 
 Example on WordCount:
+
 ```
 Key is poet name. Value is the Poems/text.
 Feed it to Mapper:
@@ -111,6 +113,7 @@ Reduces by accumulating all values for each key (In our case: add them up, so we
 
 Reduce can be run multiple times to get the final answer. Can have multiple reducers running simultaneously as well.
 ```
+
 Tip: Hadoop uses this paradigm.
 
 
