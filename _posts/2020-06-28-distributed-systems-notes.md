@@ -24,14 +24,15 @@ Multiple computers working on a single goal, presenting an abstraction of being 
 ## Distributed Storage
 
 ### Strategies:
-	Simple ones (Based on relational paradigm with tweaks)
+
+Simple ones (Based on relational paradigm with tweaks):
 	
 -	Read Replication: Single master, multiple followers. Good for Read heavy systems. May sacrifice consistency as write updates may not propagate fast enough.
 Bottleneck at the main node’s write operations.
 -	Sharding: Multiple bins/shards based on keys with each shard following read-replication. Solves the bottleneck on write ops by dividing write traffic.
 Problems: limited data model (key must be common across all tables), limited data access capability (can only query based on key or else do a scatter/gather)
 
--	Consistent Hashing/Distributed Hash Table (DHT)/Dynamo style DB (Amazon internal)/cassandra DB
+#### Consistent Hashing/Distributed Hash Table (DHT)/Dynamo style DB (Amazon internal)/cassandra DB
 
 ```
 Hash the key. Nodes distributed in a ring with tokens/hash ranges assigned. The key is distributed based on hash value. Data is balanced. No Single master
@@ -52,7 +53,7 @@ N - Total no of replicas (In our case=3)
 
 We may sacrifice consistency in this case. (may not always get the most recent write update on a new read) if we want better latency. (Do not wish to wait for read/write confirmations)
  
-### Why use consistent hashing?
+### When use consistent hashing?
 
 Scale, good for transactional data (many reads and writes), always online
 
