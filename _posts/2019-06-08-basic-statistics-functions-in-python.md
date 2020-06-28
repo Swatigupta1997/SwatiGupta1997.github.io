@@ -1,6 +1,6 @@
 ---
 layout: default
-title: basic statistics functions in python
+title: Basic statistics functions in python
 dates: 2019-06-08 14:30 IST
 comments: true
 ---
